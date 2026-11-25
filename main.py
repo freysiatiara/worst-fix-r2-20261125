@@ -22,6 +22,7 @@ def main():
     )
     output_path = os.path.join(output_dir, "entry.txt")
 
+    os.makedirs(output_dir, exist_ok=True)
     with open(output_path, "w", encoding="utf-8", newline="") as f:
         f.write(LINE)
 
